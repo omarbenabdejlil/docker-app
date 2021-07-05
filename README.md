@@ -6,12 +6,13 @@ runnin a full php application into docker containers, using the docker compose t
 ## Spinning up multiples containers : 
 `docker-compose up -d`
 
-<img src="https://i.ibb.co/9rXVwvG/compose1.png" alt="compose1">
+<a href="https://ibb.co/9rXVwvG"><img src="https://i.ibb.co/gR1Pv76/compose1.png" alt="compose1" border="0"></a>
 
 ## Turn off the containers : 
 `docker-compose down -d` || `docker container stop ${docker container list -aq}`
 
-## Check out the containers with some infomations in addition [ip,adresse,port]
+## Check out the containers with some infomations in addition [ ip, adresse, port]
 `docker container ps`
 - exemple :
-<img src="![image](https://user-images.githubusercontent.com/42030023/124466271-64baf280-dd8e-11eb-9910-91864069573f.png)">
+
+<a href="https://ibb.co/hDJ05pK"><img src="https://i.ibb.co/yWc2TL8/docker-compose2.png" alt="docker-compose2" border="0"></a>
