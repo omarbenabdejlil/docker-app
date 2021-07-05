@@ -6,7 +6,7 @@ runnin a full php application into docker containers, using the docker compose t
 ## Spinning up multiples containers : 
 `docker-compose up -d`
 
-<a href="https://ibb.co/9rXVwvG"><img src="https://i.ibb.co/gR1Pv76/compose1.png" alt="compose1" border="0"></a>
+<img src="https://i.ibb.co/gR1Pv76/compose1.png" alt="compose1" border="0">
 
 ## Turn off the containers : 
 `docker-compose down -d` || `docker container stop ${docker container list -aq}`
@@ -14,5 +14,4 @@ runnin a full php application into docker containers, using the docker compose t
 ## Check out the containers with some infomations in addition [ ip, adresse, port]
 `docker container ps`
 - exemple :
-
-<a href="https://ibb.co/hDJ05pK"><img src="https://i.ibb.co/yWc2TL8/docker-compose2.png" alt="docker-compose2" border="0"></a>
+<img src="https://i.ibb.co/yWc2TL8/docker-compose2.png" alt="docker-compose2" border="0">
