@@ -6,7 +6,7 @@ runnin a full php application into docker containers, using the docker compose t
 ## Spinning up multiples containers : 
 `docker-compose up -d`
  
-<img src="https://i.ibb.co/gR1Pv76/compose1.png" alt="compose1" border="0" width="1500px">
+<img src="https://i.ibb.co/gR1Pv76/compose1.png" alt="compose1" border="0" >
 
 ## Turn off the containers : 
 `docker-compose down -d` || `docker container stop ${docker container list -aq}`
