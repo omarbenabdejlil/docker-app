@@ -7,9 +7,9 @@ services:
       context: ./
       dockerfile: ./docker/apache/Dockerfile
     depends_on:
-      - node
+      - mysql
     ports:
-      - 4000:80
+      - "4000:80"
 
   php-fpm:
     build:
@@ -17,19 +17,16 @@ services:
       dockerfile: ./docker/php-fpm/Dockerfile
     depends_on:
       - mysql
-    depends_on:
-      - mysql
 
   mysql:
     image: mysql:8.0
     volumes:
-      - db:/var/lib/mysql/
+      - db:/var/lib/mysql
     environment:
-      - MYSQL_ROOT_PASSWORD=123456
-      - MYSQL_DATABASE=omardb
-      - MYSQL_USER=omar
-      - MYSQL_PASSWORD=123
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: omardb
+      MYSQL_USER: omar
+      MYSQL_PASSWORD: 123
 
 volumes:
-  db:        
-
+  db:
